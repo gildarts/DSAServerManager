@@ -30,8 +30,70 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ActiproSoftware.Shared.Net20, Version=1.0.102.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\FiscaRuntime\components\ActiproSoftware.Shared.Net20.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.SyntaxEditor.Addons.Web.Net20, Version=4.0.262.0, Culture=neutral, PublicKeyToken=21a821480e210563, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\FiscaRuntime\components\ActiproSoftware.SyntaxEditor.Addons.Web.Net20.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.SyntaxEditor.Net20, Version=4.0.283.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\FiscaRuntime\components\ActiproSoftware.SyntaxEditor.Net20.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.WinUICore.Net20, Version=1.0.102.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\FiscaRuntime\components\ActiproSoftware.WinUICore.Net20.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\..\..\Desktop\FiscaRuntime\modules\Campus\Aspose.Cells.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Campus">
+      <HintPath>..\..\..\Desktop\FiscaRuntime\modules\Campus\Campus.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=9.5.0.1, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\FiscaRuntime\components\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="FISCA">
+      <HintPath>..\..\..\Desktop\FiscaRuntime\kernel\FISCA.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FISCA.Authentication">
+      <HintPath>..\..\..\Desktop\FiscaRuntime\kernel\FISCA.Authentication.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FISCA.Core">
+      <HintPath>..\..\..\Desktop\FiscaRuntime\kernel\FISCA.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FISCA.Data">
+      <HintPath>..\..\..\Desktop\FiscaRuntime\kernel\FISCA.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FISCA.DSAClient">
+      <HintPath>..\..\..\Desktop\FiscaRuntime\kernel\FISCA.DSAClient.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FISCA.Permission">
+      <HintPath>..\..\..\Desktop\FiscaRuntime\kernel\FISCA.Permission.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FISCA.Presentation">
+      <HintPath>..\..\..\Desktop\FiscaRuntime\kernel\FISCA.Presentation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FISCA.UDT">
+      <HintPath>..\..\..\Desktop\FiscaRuntime\kernel\FISCA.UDT.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -39,8 +101,121 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangeListener\ChangeEventArgs.cs" />
+    <Compile Include="ChangeListener\ChangeListen.cs" />
+    <Compile Include="ChangeListener\ChangeSource.cs" />
+    <Compile Include="ChangeListener\CheckBoxSource.cs" />
+    <Compile Include="ChangeListener\CheckBoxXSource.cs" />
+    <Compile Include="ChangeListener\ComboBoxSource.cs" />
+    <Compile Include="ChangeListener\DataGridViewSource.cs" />
+    <Compile Include="ChangeListener\IChangeSource.cs" />
+    <Compile Include="ChangeListener\NumericUpDownSource.cs" />
+    <Compile Include="ChangeListener\RadioButtonSource.cs" />
+    <Compile Include="ChangeListener\TextBoxSource.cs" />
+    <Compile Include="ConnectionHelper.cs" />
+    <Compile Include="DefaultView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DetailContentImproved.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DetailContentImproved.designer.cs">
+      <DependentUpon>DetailContentImproved.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetailContentImprovedMsg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DetailContentImprovedMsg.designer.cs">
+      <DependentUpon>DetailContentImprovedMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetailItemDescription.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DetailItemDescription.Designer.cs">
+      <DependentUpon>DetailItemDescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetailItems.cs" />
+    <Compile Include="DSAServer.cs" />
+    <Compile Include="Extension_DataTable.cs" />
+    <Compile Include="Fields\DSNSField.cs" />
+    <Compile Include="Fields\FieldManager.cs" />
+    <Compile Include="Fields\GroupField.cs" />
+    <Compile Include="Fields\TitleField.cs" />
+    <Compile Include="Forms\AddNewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddNewForm.Designer.cs">
+      <DependentUpon>AddNewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\BasicInfoItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Items\BasicInfoItem.Designer.cs">
+      <DependentUpon>BasicInfoItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListPaneFieldImproved.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RibbonButtons.cs" />
+    <Compile Include="StringUtil.cs" />
+    <Compile Include="ViewHelper\KeyCatalog.cs" />
+    <Compile Include="ViewHelper\KeyCatalogCollection.cs" />
+    <Compile Include="ViewHelper\KeyCatalogFactory.cs" />
+    <Compile Include="ViewHelper\KeyNode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ViewHelper\TreeNavViewBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewHelper\TreeNavViewBase.Designer.cs">
+      <DependentUpon>TreeNavViewBase.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Aspose.Total.lic" />
+    <EmbeddedResource Include="DefaultView.resx">
+      <DependentUpon>DefaultView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailContentImproved.resx">
+      <DependentUpon>DetailContentImproved.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailContentImprovedMsg.resx">
+      <DependentUpon>DetailContentImprovedMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailItemDescription.resx">
+      <DependentUpon>DetailItemDescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddNewForm.resx">
+      <DependentUpon>AddNewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\BasicInfoItem.resx">
+      <DependentUpon>BasicInfoItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewHelper\TreeNavViewBase.resx">
+      <DependentUpon>TreeNavViewBase.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atom_add_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atom_close_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\atom_down_128.png" />
+    <Content Include="Resources\atom_up_128.png" />
+    <None Include="Resources\lamp_search_128.png" />
+    <None Include="Resources\import.image.png" />
+    <None Include="Resources\Export.Image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

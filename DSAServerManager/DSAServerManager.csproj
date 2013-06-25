@@ -54,6 +54,9 @@
       <HintPath>..\..\..\Desktop\FiscaRuntime\modules\Campus\Campus.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Campus.Configuration">
+      <HintPath>..\..\..\Desktop\FiscaRuntime\modules\Campus\Campus.Configuration.dll</HintPath>
+    </Reference>
     <Reference Include="DevComponents.DotNetBar2, Version=9.5.0.1, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Desktop\FiscaRuntime\components\DevComponents.DotNetBar2.dll</HintPath>

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using FISCA.UDT;
 
-//當了55
+//當了
 namespace DSAServerManager
 {
     [TableName("dsaserver")]
